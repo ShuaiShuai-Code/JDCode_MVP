@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f5f5fd"
+    tools:context=".ui.activity.SetActivity">
+
+
+    <TextView
+        android:id="@+id/tv_set"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15dp"
+        android:layout_marginRight="@dimen/dp_15dp"
+        android:drawableRight="@mipmap/ic_right_in"
+        android:drawablePadding="@dimen/dp_10"
+        android:maxLines="1"
+        android:gravity="center_vertical"
+        android:text="左右滑动界面中的控制条可改变字体大小"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp_16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.jd.lie.mine.utils.FontSizeView
+        android:id="@+id/fsvFontSize"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_marginLeft="@dimen/dp_15dp"
+        android:layout_marginRight="@dimen/dp_15dp"
+        android:background="@color/white"
+        app:circleRadius="11dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_set"
+        app:lineColor="@color/color_7f7f7f"
+        app:standerSize="16" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <!--纯色-->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="color_0780ED">#0780ED</color>
+    <color name="transparent">#00000000</color>
+    <color name="red">#FF0000</color>
+
+    <color name="color_ff4500">#FF4500</color>
+    <color name="color_ced7eb">#CED7EB</color>
+    <color name="color_8f97c3">#8F97C3</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_2B5DE7">#2B5DE7</color>
+    <color name="color_2a2a2a">#2a2a2a</color>
+    <color name="color_1770ff">#1770ff</color>
+    <color name="color_007de6">#007de6</color>
+    <color name="color_4a67ff">#4a67ff</color>
+    <color name="color_7f7f7f">#7f7f7f</color>
+    <color name="color_00a8ff">#00a8ff</color>
+    <color name="color_00e9ff">#00e9ff</color>
+    <color name="color_fd9828">#fd9828</color>
+    <color name="color_ff9800">#ff9800</color>
+    <color name="color_80ffffff">#80ffffff</color>
+    <color name="top_bg">#0f0f0f</color>
+    <color name="color_1432ce">#1432ce</color>
+    <color name="color_f5f5fd">#f5f5fd</color>
+    <color name="color_dedede">#dedede</color>
+    <color name="color_dddddd">#dddddd</color>
+
+
+
+
+    <color name="blackSplash">#010101</color>
+    <color name="theme_red">#ff0000</color>
+    <color name="btn_circle_style_white">#ffffff</color>
+    <color name="pure_white">#ffffff</color>
+    <color name="lightGray">#d3d3d3</color><!--亮灰色 -->
+    <color name="lightGrey">#d3d3d3</color><!--亮灰色 -->
+    <color name="blackPure">#000000</color><!--亮灰色 -->
+    <color name="blackTech">#222222</color><!--亮灰色 -->
+    <color name="blue001">#3260fa</color><!--亮灰色 -->
+    <color name="blue002">#3250a4</color><!--亮灰色 -->
+    <color name="redPure">#ff0000</color><!--红色 -->
+    <color name="whiteLight">#f8f8f8</color><!--浅白 -->
+
+    <color name="greenWX">#a2e563</color><!--微信绿 -->
+    <color name="greenWX_transparent">#00a2e563</color><!--微信绿 -->
+
+    <color name="blueBTN">#269FD5</color><!--按钮蓝 -->
+    <color name="blueAlertBg">#1dacf0</color><!--按钮蓝 -->
+    <color name="blueResultMain">#54a9f9</color><!--按钮蓝 -->
+
+
+    <color name="redChartDetails">#fa2431</color><!--红色线条 -->
+    <color name="blueChartDetails">#0b24fb</color><!--蓝色线条 -->
+    <color name="bluePure">#0000ff</color><!--蓝色线条 -->
+    <color name="bluePolice">#0000ff</color><!--蓝色线条 -->
+    <color name="blueSplash">#011c73</color><!--启动蓝 -->
+
+
+
+    <color name="blueInfoInputBg">#001169</color><!--深蓝背景 信息输入页面 -->
+    <color name="blueItemAreaBg">#14299A</color><!--深蓝背景 条目块状区域 -->
+    <color name="grayBg">#c9c9c9</color><!--灰色背景 条目块状区域 -->
+
+    <color name="GreyBackground">#f3f3f3</color><!--灰色底图 -->
+
+    <color name="btn_blue_light">#1432CE</color>  <!-- 按钮浅蓝-->
+
+    <color name="grey_light_title">#8F97C3</color>  <!--字体浅色的title -->
+
+
+    <color name="text_color_hint">#8F97C3</color>  <!--hint 颜色 -->
+
+
+    <color name="text_silver">#aaa</color>
+    <color name="text_white">#ffffff</color>
+    <color name="text_dark">#444</color>
+
+
+    <color name="grayMainBtn">#d6d6d6</color><!--灰色禁用色调 -->
+
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="ijk_color_blue_main">@color/ijk_color_blue_500</color>
+    <color name="ijk_color_blue_50">#E3F2FD</color>
+    <color name="ijk_color_blue_100">#BBDEFB</color>
+    <color name="ijk_color_blue_200">#90CAF9</color>
+    <color name="ijk_color_blue_300">#64B5F6</color>
+    <color name="ijk_color_blue_400">#42A5F5</color>
+    <color name="ijk_color_blue_500">#2196F3</color>
+    <color name="ijk_color_blue_600">#1E88E5</color>
+    <color name="ijk_color_blue_700">#1976D2</color>
+    <color name="ijk_color_blue_800">#1565C0</color>
+    <color name="ijk_color_blue_900">#0D47A1</color>
+    <color name="color_f2f2f2">#f2f2f2</color>
+
+    <color name="ijk_transparent_dark">#77000000</color>
+
+
+    <!--CIT edit -->
+    <color name="alert_dialog_ok_color">#1770FF</color>
+
+    <!--答题页-->
+    <color name="num_0">#666666</color>
+    <color name="num_1">#CFAE51</color>
+    <color name="num_2">#0E52FC</color>
+    <color name="num_4">#4EE36E</color>
+    <color name="num_5">#FFFFFF</color>
+    <color name="num_6">#FF00FF</color>
+    <color name="num_7">#EA363F</color>
+    <color name="num_8">#FE7C37</color>
+</resources>

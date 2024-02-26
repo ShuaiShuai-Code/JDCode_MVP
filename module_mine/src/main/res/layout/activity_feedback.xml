@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f5f5fd"
+    tools:context=".ui.activity.SetActivity">
+
+
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_65dp"
+        android:layout_marginRight="@dimen/dp_5dp"
+        android:background="@color/white"
+        android:drawableRight="@mipmap/ic_right_in"
+        android:drawablePadding="@dimen/dp_10"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_15dp"
+        android:text="问题类型"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp_16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view_01"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/dp_45dp"
+        android:layout_marginRight="@dimen/dp_15dp"
+        android:background="@color/color_ced7eb"
+        app:layout_constraintTop_toBottomOf="@id/tv_type" />
+
+    <LinearLayout
+        android:id="@+id/ll_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/view_01">
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_200dp"
+            android:layout_marginLeft="@dimen/dp_15dp"
+            android:layout_marginRight="@dimen/dp_15dp"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="请输入"
+            android:paddingTop="@dimen/dp_15dp" />
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_15dp"
+            android:layout_marginRight="@dimen/dp_15dp"
+            android:background="@color/white"
+            android:horizontalSpacing="@dimen/dp_5dp"
+            android:numColumns="3"
+            android:verticalSpacing="@dimen/dp_15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/dp_15dp"
+            android:gravity="right"
+            android:text="0/200"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50dp"
+        android:layout_marginLeft="@dimen/dp_15dp"
+        android:layout_marginTop="@dimen/dp_50dp"
+        android:layout_marginRight="@dimen/dp_15dp"
+        android:background="@color/color_1770ff"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16sp"
+        app:layout_constraintTop_toBottomOf="@+id/ll_edit"
+        tools:layout_editor_absoluteX="55dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

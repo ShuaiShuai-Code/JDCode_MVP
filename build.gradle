@@ -1,0 +1,24 @@
+buildscript {
+    apply from: 'controller.gradle'
+    ext {
+        kotlin_version = '1.3.72'
+    }
+    addRepos(repositories)
+    repositories {
+        addRepos(repositories)
+        
+    }
+    dependencies {
+        classpath build_gradle.build
+        classpath kotlin_maven.plugin
+        classpath butterKnife_lib_maven.plugin
+    }
+}
+
+allprojects {
+    addRepos(repositories)
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_f2f2f2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cg_white2"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_feed1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60dp"
+            android:background="@color/white"
+            android:text="题目编制"
+            android:textColor="@color/color_1770ff"
+            android:textSize="@dimen/sp_18sp" />
+
+
+        <Button
+            android:id="@+id/btn_feed2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60dp"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/white"
+            android:text="界面设计"
+            android:textColor="@color/color_1770ff"
+            android:textSize="@dimen/sp_18sp" />
+
+
+        <Button
+            android:id="@+id/btn_feed3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60dp"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/white"
+            android:text="施测过程"
+            android:textColor="@color/color_1770ff"
+            android:textSize="@dimen/sp_18sp" />
+
+
+        <Button
+            android:id="@+id/btn_feed4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60dp"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/white"
+            android:text="结果报告"
+            android:textColor="@color/color_1770ff"
+            android:textSize="@dimen/sp_18sp" />
+
+
+        <Button
+            android:id="@+id/btn_feed5"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60dp"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/white"
+            android:text="其他"
+            android:textColor="@color/color_1770ff"
+            android:textSize="@dimen/sp_18sp" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60dp"
+        android:layout_marginTop="10dp"
+        android:text="取消"
+        android:background="@color/white"
+        android:textSize="@dimen/sp_18sp" />
+
+</LinearLayout>

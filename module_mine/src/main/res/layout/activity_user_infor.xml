@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f5f5fd"
+    tools:context=".ui.activity.SetActivity">
+
+    <!--头像-->
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_65dp"
+        android:layout_marginLeft="@dimen/dp_15dp"
+        android:layout_marginRight="@dimen/dp_15dp"
+        android:drawablePadding="@dimen/dp_10"
+        android:gravity="center_vertical"
+        android:text="@string/mine_heard"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp_16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_head"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_5dp"
+        app:layout_constraintRight_toLeftOf="@+id/img_right"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <ImageView
+        android:id="@+id/img_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8dp"
+        android:background="@mipmap/ic_right_in"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view_01"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/dp_15dp"
+        android:layout_marginRight="@dimen/dp_15dp"
+        android:background="@color/color_ced7eb"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_header" />
+    <!--头像-->
+    <TextView
+        android:id="@+id/tv_mech"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_65dp"
+        android:layout_marginLeft="@dimen/dp_15dp"
+        android:layout_marginRight="@dimen/dp_15dp"
+        android:drawablePadding="@dimen/dp_10"
+        android:gravity="center_vertical"
+        android:text="@string/mine_mech"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp_16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view_01" />
+
+    <TextView
+        android:id="@+id/tv_mech_name"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_65dp"
+        android:gravity="center_vertical"
+        android:text="@string/mine_meach_name"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_mech"
+        app:layout_constraintRight_toLeftOf="@+id/img_right"
+        app:layout_constraintTop_toTopOf="@+id/view_01">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/img_mech"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/ic_right_in"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_mech"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view_01" />
+
+    <View
+        android:id="@+id/view_02"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/dp_15dp"
+        android:layout_marginRight="@dimen/dp_15dp"
+        android:background="@color/color_ced7eb"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mech" />
+    <!--电话-->
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_65dp"
+        android:layout_marginLeft="@dimen/dp_15dp"
+        android:layout_marginRight="@dimen/dp_15dp"
+        android:drawablePadding="@dimen/dp_10"
+        android:gravity="center_vertical"
+        android:text="@string/mine_phone"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp_16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view_02" />
+
+    <TextView
+        android:id="@+id/tv_my_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_65dp"
+        android:gravity="center_vertical"
+        android:text="@string/mine_my_phone"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_phone"
+        app:layout_constraintRight_toLeftOf="@+id/img_right"
+        app:layout_constraintTop_toTopOf="@+id/view_02">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/img_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/ic_right_in"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_my_phone"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_my_phone" />
+
+    <View
+        android:id="@+id/view_03"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/dp_15dp"
+        android:layout_marginRight="@dimen/dp_15dp"
+        android:background="@color/color_ced7eb"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_phone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

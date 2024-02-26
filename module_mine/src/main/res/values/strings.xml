@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">module_mine</string>
+    <string name="mine_heard">头像</string>
+    <string name="mine_mech">机构名称</string>
+    <string name="mine_meach_name">JDJR</string>
+    <string name="mine_phone">电话</string>
+    <string name="mine_my_phone">182 1002 4567</string>
+
+
+    <string name="l_album_name_all">最近图片</string>
+    <string name="l_album_name_selected">选择图片</string>
+    <string name="l_album_name_camera">相机</string>
+    <string name="l_album_name_download">下载</string>
+    <string name="l_album_name_screen_shot">屏幕截图</string>
+
+</resources>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

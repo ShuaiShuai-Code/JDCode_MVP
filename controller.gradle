@@ -1,0 +1,208 @@
+// 配置统一的依赖库和maven库
+def controller = [:]
+
+// ConstraintLayout
+controller.constraintlayout = "1.1.3"
+
+// appcompat
+controller.appcompat = "1.1.0"
+
+// core-ktx
+controller.core_ktx = "1.2.0"
+
+// annotations
+controller.annotations = "1.1.0"
+
+//viewpager
+controller.viewpager = "1.0.0"
+
+//material
+controller.material = "1.2.0-alpha06"
+
+//butterknife
+controller.butterknife = "10.2.1"
+
+// kotlin_version
+controller.kotlin_version = "1.3.72"
+
+// BaseRecyclerViewAdapterHelper
+controller.BaseRecyclerViewAdapterHelper = "3.0.2"
+
+//anko
+controller.anko = "0.10.8"
+
+// eventbus
+controller.eventbus = "1.0.5.1"
+
+// network
+//controller.HttpRequest = "1.2.1"
+
+// retrofit
+controller.retrofit = '2.8.1'
+
+// rxjava2
+controller.rxjava2 = '2.2.19'
+
+// okhttp3
+controller.okhttp = '4.6.0'
+
+// RxiLifecycle3
+controller.rxlifecycle = '3.1.0'
+
+// rxpermission
+controller.rxpermission = "0.10.2"
+
+// glide
+controller.glide = "4.11.0"
+
+// arouter
+controller.arouter_api = "1.5.0"
+controller.arouter_compiler = "1.1.4"
+
+// build-gradle
+controller.buildgradle = '4.0.0'
+
+// android-pickers
+controller.android_pickers = '1.0.3'
+
+// loading_view
+controller.loading_view = '2.1.3'
+
+// guava
+controller.guava = '29.0-android'
+
+// Androidx 库配置
+def androidx_maven = [:]
+androidx_maven.annotations = "androidx.annotation:annotation:$controller.annotations"
+androidx_maven.core = "androidx.core:core:$controller.core"
+androidx_maven.appcompat = "androidx.appcompat:appcompat:$controller.appcompat"
+androidx_maven.constraint = "androidx.constraintlayout:constraintlayout:$controller.constraintlayout"
+androidx_maven.viewpager = "androidx.viewpager:viewpager:$controller.viewpager"
+ext.androidx_maven = androidx_maven
+
+// material 库配置
+def material_maven = [:]
+material_maven.material = "com.google.android.material:material:$controller.material"
+ext.material_maven = material_maven
+
+// anko 库配置
+def anko_maven = [:]
+anko_maven.api = "org.jetbrains.anko:anko:$controller.anko"
+ext.anko_maven = anko_maven
+
+// 网络 库配置
+//def network_maven = [:]
+//network_maven.api = "com.github.Mp5A5:HttpRequest:$controller.HttpRequest"
+//ext.network_maven = network_maven
+
+// retrofit 库配置
+def retrofit_maven = [:]
+retrofit_maven.api = "com.squareup.retrofit2:retrofit:$controller.retrofit"
+retrofit_maven.gson = "com.squareup.retrofit2:converter-gson:$controller.retrofit"
+retrofit_maven.adapter = "com.squareup.retrofit2:adapter-rxjava2:$controller.retrofit"
+ext.retrofit_maven = retrofit_maven
+
+// okhttp 库配置
+def okhttp_maven = [:]
+okhttp_maven.api = "com.squareup.okhttp3:okhttp:$controller.okhttp"
+okhttp_maven.interceptor = "com.squareup.okhttp3:logging-interceptor:$controller.okhttp"
+ext.okhttp_maven = okhttp_maven
+
+// rxlifecycle 库配置
+def rxlifecycle_maven = [:]
+rxlifecycle_maven.api = "com.trello.rxlifecycle3:rxlifecycle:$controller.rxlifecycle"
+rxlifecycle_maven.android = "com.trello.rxlifecycle3:rxlifecycle-android:$controller.rxlifecycle"
+rxlifecycle_maven.components = "com.trello.rxlifecycle3:rxlifecycle-components:$controller.rxlifecycle"
+rxlifecycle_maven.kotlin = "com.trello.rxlifecycle3:rxlifecycle-kotlin:$controller.rxlifecycle"
+rxlifecycle_maven.androidKt = "com.trello.rxlifecycle3:rxlifecycle-android-lifecycle-kotlin:$controller.rxlifecycle"
+ext.rxlifecycle_maven = rxlifecycle_maven
+
+// rxpermission 库配置
+def rxPermission_maven = [:]
+rxPermission_maven.api = "com.github.tbruyelle:rxpermissions:$controller.rxpermission"
+ext.rxPermission_maven = rxPermission_maven
+
+// adapter 库配置
+def adapter_maven = [:]
+adapter_maven.baseadapter = "com.github.CymChad:BaseRecyclerViewAdapterHelper:$controller.BaseRecyclerViewAdapterHelper"
+ext.adapter_maven = adapter_maven
+
+// 黄油刀 库配置
+def butterKnife_lib_maven = [:]
+butterKnife_lib_maven.plugin = "com.jakewharton:butterknife-gradle-plugin:$controller.butterknife"
+ext.butterKnife_lib_maven = butterKnife_lib_maven
+
+def butterKnife_maven = [:]
+butterKnife_maven.version = "com.jakewharton:butterknife:$controller.butterknife"
+butterKnife_maven.compiler = "com.jakewharton:butterknife-compiler:$controller.butterknife"
+ext.butterKnife_maven = butterKnife_maven
+
+// eventbus 库配置
+def evenBus_maven = [:]
+evenBus_maven.api = "org.simple:androideventbus:$controller.eventbus"
+ext.evenBus_maven = evenBus_maven
+
+// kotlin 版本配置
+def kotlin_maven = [:]
+kotlin_maven.stdlib = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$controller.kotlin_version"
+kotlin_maven.plugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$controller.kotlin_version"
+ext.kotlin_maven = kotlin_maven
+
+// core-ktx 库配置
+def ktx_maven = [:]
+ktx_maven.api = "androidx.core:core-ktx:$controller.core_ktx"
+ext.ktx_maven = ktx_maven
+
+// arouter 库配置
+def router_maven = [:]
+router_maven.api = "com.alibaba:arouter-api:$controller.arouter_api"
+router_maven.compiler = "com.alibaba:arouter-compiler:$controller.arouter_compiler"
+ext.router_maven = router_maven
+
+// glide 配置库
+def glide_maven = [:]
+glide_maven.api = "com.github.bumptech.glide:glide:$controller.glide"
+glide_maven.compiler = "com.github.bumptech.glide:compiler:$controller.glide"
+ext.glide_maven = glide_maven
+
+// 选择器 配置库
+def android_pickers_maven = [:]
+android_pickers_maven.api = "com.github.addappcn:android-pickers:$controller.android_pickers"
+ext.android_pickers_maven = android_pickers_maven
+
+// 加载动画 配置库
+def loading_view_maven = [:]
+loading_view_maven.api = "com.wang.avi:library:$controller.loading_view"
+ext.loading_view_maven = loading_view_maven
+
+// 加载动画 配置库
+def guava_maven = [:]
+guava_maven.api = "com.google.guava:guava:$controller.guava"
+ext.guava_maven = guava_maven
+
+
+// build 配置
+def build_versions = [:]
+build_versions.min_sdk = 23
+build_versions.target_sdk = 28
+build_versions.build_tools = "28.0.2"
+ext.build_versions = build_versions
+
+// gradle配置
+def build_gradle = [:]
+build_gradle.build = "com.android.tools.build:gradle:$controller.buildgradle"
+ext.build_gradle = build_gradle
+
+//def greendao_maven = [:]
+//greendao_maven.gradle = "org.greenrobot:greendao-gradle-plugin:$versions.greendao"
+//greendao_maven.api = "org.greenrobot:greendao:$versions.greendao"
+//ext.greendao_maven = greendao_maven
+
+static def addRepos(RepositoryHandler handler) {
+    handler.maven { url "https://jitpack.io" }
+    handler.google()
+    handler.jcenter()
+    handler.mavenCentral()
+}
+
+ext.addRepos = this.&addRepos

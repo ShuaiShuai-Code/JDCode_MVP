@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f5f5fd"
+    tools:context=".ui.activity.SetActivity">
+
+    <TextView
+        android:id="@+id/tv_app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_55dp"
+        android:gravity="center_horizontal"
+        android:text="京东测谎机器人"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp_24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20dp"
+        android:gravity="center_horizontal"
+        android:text="V 1.0"
+        android:textColor="@color/color_2a2a2a"
+        android:textSize="@dimen/sp_16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_app_name" />
+
+    <LinearLayout
+        android:id="@+id/ll_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_100dp"
+        android:layout_marginBottom="@dimen/dp_2dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_version">
+
+        <TextView
+            android:id="@+id/tv_account"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_65dp"
+            android:layout_marginLeft="@dimen/dp_15dp"
+            android:layout_marginRight="@dimen/dp_15dp"
+            android:drawableRight="@mipmap/ic_right_in"
+            android:drawablePadding="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:text="功能介绍"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/dp_15dp"
+            android:layout_marginRight="@dimen/dp_15dp"
+            android:background="@color/color_ced7eb" />
+
+        <TextView
+            android:id="@+id/tv_gn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_65dp"
+            android:layout_marginLeft="@dimen/dp_15dp"
+            android:layout_marginRight="@dimen/dp_15dp"
+            android:drawableRight="@mipmap/ic_right_in"
+            android:drawablePadding="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:text="投诉"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/dp_15dp"
+            android:layout_marginRight="@dimen/dp_15dp"
+            android:background="@color/color_ced7eb" />
+
+        <TextView
+            android:id="@+id/tv_check_updata"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_65dp"
+            android:layout_marginLeft="@dimen/dp_15dp"
+            android:layout_marginRight="@dimen/dp_15dp"
+            android:drawableRight="@mipmap/ic_right_in"
+            android:drawablePadding="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:text="检查新版本"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/dp_15dp"
+            android:layout_marginRight="@dimen/dp_15dp"
+            android:background="@color/color_ced7eb" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/xuke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10dp"
+        android:text="《软件许可及服务协议》"
+        android:textColor="@color/color_2B5DE7"
+        android:textSize="@dimen/sp_15sp"
+        app:layout_constraintBottom_toTopOf="@+id/banquan"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_menu"
+        app:layout_constraintVertical_bias="0.964" />
+
+    <TextView
+        android:id="@+id/banquan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_35dp"
+        android:text="© 京东数科 版权所有"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/sp_12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_menu"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

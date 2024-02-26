@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/rl_location_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_f5f5fd"
+        >
+
+        <TextView
+            android:id="@+id/tv_location_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_15dp"
+            android:layout_marginTop="@dimen/dp_20dp"
+            android:layout_marginBottom="@dimen/dp_20dp"
+            android:text="选择相关问题"
+            android:textColor="@color/color_8f97c3"
+            android:textSize="@dimen/sp_18sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_select_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/tv_location_one"
+            android:textColor="@color/color_8f97c3"
+            android:textSize="@dimen/sp_18sp"
+            tools:text="3"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/tv_select_size"
+            android:text=""
+            android:textColor="@color/color_8f97c3"
+            android:textSize="@dimen/sp_18sp"
+            />
+
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="@dimen/dp_36dp"
+            android:layout_height="@dimen/dp_36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp_15dp"
+            android:src="@mipmap/ic_delete"
+            />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_change"
+        android:layout_below="@id/rl_location_one"
+        />
+
+
+    <Button
+        android:id="@+id/btn_change"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_54dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_1432ce"
+        android:text="加载更多"
+        android:textColor="@color/color_80ffffff"
+        />
+
+
+</RelativeLayout>

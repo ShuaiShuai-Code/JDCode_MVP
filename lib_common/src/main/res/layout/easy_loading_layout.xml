@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.8"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <!-- 自定义的loading view   by haoshuo   2019-02-26 15:34:08 -->
+
+
+    <!--失败的视图 -->
+    <RelativeLayout
+        android:id="@+id/rl_tv_failed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_failed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="加载失败，点击重试"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+
+
+
+    <!--加载中 视图 -->
+    <RelativeLayout
+        android:id="@+id/rl_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:visibility="visible">
+
+
+        <!-- 加载动画 -->
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/loading_view_main"
+            android:layout_marginTop="10dp"
+            android:layout_centerInParent="true"
+            app:indicatorName="LineScaleIndicator"
+            app:indicatorColor="@color/greenWX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/tv_easy_loading_view"
+            android:layout_below="@+id/loading_view_main"
+            android:text="加载中"
+            android:textSize="16sp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

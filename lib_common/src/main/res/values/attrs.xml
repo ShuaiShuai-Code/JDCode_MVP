@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="NameInputView">
+        <attr name="leftText" format="string" />
+        <attr name="leftTextSize" format="dimension" />
+        <attr name="leftTextMargin" format="dimension" />
+        <attr name="leftTextColor" format="color" />
+
+
+        <attr name="rightImageMargin" format="dimension" />
+        <attr name="rightImageVisible">
+            <enum name="gone" value="8" />
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="4" />
+        </attr>
+        <attr name="rightImage" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="TrialCitDisplayResultCircleView">
+        <attr name="colorCircle" format="color" />
+    </declare-styleable>
+
+
+
+
+</resources>

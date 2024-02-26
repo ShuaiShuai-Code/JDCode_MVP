@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    >
+
+    <TextView
+        android:id="@+id/tv_name_location"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:text="姓名"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_13sp"
+        />
+
+    <EditText
+        android:id="@+id/et_input_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dp_5dp"
+        android:layout_marginEnd="@dimen/dp_5dp"
+        android:layout_toStartOf="@id/iv_delete"
+        android:layout_toEndOf="@id/tv_name_location"
+        android:background="@null"
+        android:hint="请您输入中文名字"
+        android:inputType="text"
+        android:textSize="@dimen/sp_13sp"
+        />
+
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="@dimen/dp_15dp"
+        android:layout_height="@dimen/dp_15dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/icon_click"
+        />
+
+</RelativeLayout>

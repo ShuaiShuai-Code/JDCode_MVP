@@ -1,0 +1,92 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'com.jakewharton.butterknife'
+
+android {
+    compileSdkVersion build_versions.target_sdk
+
+    defaultConfig {
+        minSdkVersion build_versions.min_sdk
+        targetSdkVersion build_versions.target_sdk
+        flavorDimensions "versionCode"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        kapt {
+            arguments {
+                arg("moduleName", project.getName())
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.github.ShuaiShuai-Code:HttpRequest2.0:Release1.0.0'
+    // Androidx
+    api androidx_maven.annotations
+    api androidx_maven.core
+    api androidx_maven.appcompat
+    api androidx_maven.constraint
+    api androidx_maven.viewpager
+    // Material
+    api material_maven.material
+    //kotlin
+    api kotlin_maven.stdlib
+    // anko
+    api anko_maven.api
+    //ButterKnife
+    api butterKnife_maven.version
+    //kapt butterKnife_maven.compiler
+    //ARouter
+    api router_maven.api
+    //kapt router_maven.compiler
+    // RxLifecycle
+    api rxlifecycle_maven.api
+    api rxlifecycle_maven.android
+    api rxlifecycle_maven.components
+    api rxlifecycle_maven.kotlin
+    api rxlifecycle_maven.androidKt
+    // Retrofit
+    api retrofit_maven.api
+    api retrofit_maven.gson
+    api retrofit_maven.adapter
+    // Network
+//    api network_maven.api
+    // EvenBus
+    api evenBus_maven.api
+    // Glide
+    api glide_maven.api
+    kapt glide_maven.compiler
+    // RxPermission
+    api rxPermission_maven.api
+    // adapter
+    api adapter_maven.baseadapter
+    //OkHttp
+    api okhttp_maven.api
+    api okhttp_maven.interceptor
+    // 位置等选择控件
+    api android_pickers_maven.api
+    // loading view
+    api loading_view_maven.api
+    // guava
+    api guava_maven.api
+
+    api project(':lib_utils')
+//    api project(':lib_request')
+
+
+}
